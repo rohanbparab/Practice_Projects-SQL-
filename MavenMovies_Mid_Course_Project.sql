@@ -65,7 +65,6 @@ you are to keep customers engaged in the future. Please provide a count of uniqu
 you have in inventory at each store and then provide a count of the unique categories of films you provide. 
 */
 
-
 SELECT
 	store_id,
 	COUNT(DISTINCT film_id) AS Unique_films 
@@ -117,16 +116,15 @@ FROM payment;
 
 
 
-
-
 /*
 8.	We would like to better understand what your customer base looks like. 
 Please provide a list of all customer identification values, with a count of rentals 
 they have made all-time, with your highest volume customers at the top of the list.
 */
 
-SELECT customer_id, 
-	   COUNT(rental_id) AS count_of_rentals
+SELECT 
+	customer_id, 
+	COUNT(rental_id) AS count_of_rentals
 FROM rental
 GROUP BY 
 	customer_id
