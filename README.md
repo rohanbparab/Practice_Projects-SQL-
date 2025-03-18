@@ -1,2 +1,2 @@
 # SQL_Projects
-This Repository will contain all levels of SQL Projects
+This Repository which contains all levels of SQL Projects.
